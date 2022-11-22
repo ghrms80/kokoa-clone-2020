@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The Nico Times</title>
+    <style>
+      body {
+        margin: 50px;
+      }
+      input {
+        border: 1px solid teal;
+      }
+      input:required {
+        border-color: tomato;
+      }
+      input[type="password"] {
+        background-color: thistle;
+      }
+      input[placeholder="username"] {
+        background-color: wheat;
+      }
+      input[placeholder*="name"] {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form>
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="Last name" />
+        <input type="text" placeholder="username" />
+        <input type="password" placeholder="password" required />
+      </form>
+    </div>
+  </body>
+</html>
