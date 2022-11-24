@@ -17,3 +17,11 @@ body {
   font-family: "Open Sans", sans-serif;
   height: 200vh;
 }
+
+.main__screen {
+  padding: 0px var(--horizontal-space);
+  position: fixed;
+  top: 95px;
+  width: 100%;
+  box-sizing: border-box;
+}
