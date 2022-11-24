@@ -1,9 +1,4 @@
-.user-component {
-  position: fixed;
-  top: 135px;
-  display: flex;
-  align-items: center;
-}
+.user-component,
 .user-component__column:first-child {
   display: flex;
   align-items: center;
@@ -22,4 +17,16 @@
 .user-component__subtitle {
   margin-top: 8px;
   color: rgba(0, 0, 0, 0.5);
+}
+.user-component__avatar--xl {
+  width: 70px;
+  height: 70px;
+}
+.user-component__avatar--sm {
+  width: 50px;
+  height: 50px;
+}
+.user-component__channel {
+  display: flex;
+  align-items: center;
 }
