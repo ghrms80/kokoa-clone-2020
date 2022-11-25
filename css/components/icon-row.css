@@ -26,4 +26,37 @@
   padding-top: 20px;
 }
 .more-suggestions__title {
+  margin-bottom: 15px;
+}
+.more-suggestions__icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+.more-suggestions__icon {
+  /* margin-right: 15px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 25%;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}
+.more-suggestions__icon-image {
+  width: 40px;
+  height: 40px;
+  background-color: var(--yellow);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.more-suggestions__icon-image i {
+  font-size: 26px;
+  color: white;
+}
+.more-suggestions__icon-text {
+  font-size: 12px;
+  color: var(--color-gray);
 }
