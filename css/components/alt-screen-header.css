@@ -15,8 +15,10 @@
 .alt-header__column:last-child {
   margin-left: auto;
 }
-
 .alt-header__title {
   font-size: 24px;
   font-weight: 600;
+}
+.alt-header__column:last-child span:not(:first-child) {
+  margin-left: 15px;
 }

@@ -1,13 +1,16 @@
 .settings__setting {
   padding: 20px 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  font-size: 16px;
+  font-size: 18px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-
 .settings__setting i {
   margin-right: 12px;
   font-size: 18px;
   opacity: 0.8;
+}
+.settings__setting__column:last-child {
+  opacity: 0.5;
 }
