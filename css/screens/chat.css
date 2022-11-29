@@ -19,12 +19,24 @@
   z-index: 1;
 }
 
+@keyframes fadeIn {
+  from {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .main-chat {
   padding: 25px var(--horizontal-space) 0px;
   margin-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 0.3s ease-in-out;
 }
 .chat__timestamp {
   color: white;
@@ -102,6 +114,8 @@
   padding: 5px 15px;
   box-sizing: border-box;
   align-items: center;
+
+  transition: transform 0.3s ease-in-out;
 }
 /* input의 부모인 reply__column이 width를 
  가져야 그 자식인 input이 width를 사용할 수 있음 */
@@ -113,13 +127,14 @@
   position: relative;
 }
 .reply input {
-  /* height: 32px; */
   padding: 8px;
   width: 100%;
   box-sizing: border-box;
   border: var(--main-border);
   border-radius: 20px;
   font-size: 16px;
+
+  transition: transform 0.3s ease-in-out;
 }
 .reply i {
   opacity: 0.5;
@@ -151,4 +166,24 @@
 .reply__column button:focus,
 .reply__column button:active {
   outline: none;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-face-smile-wink,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-face-smile-wink,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 95vw;
+  transform: translateX(-12%) translateY(-80px);
+}
+.reply:focus-within {
+  transform: translateY(80px);
 }
